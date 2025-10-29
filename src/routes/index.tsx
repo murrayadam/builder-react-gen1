@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import Testimonial from '../components/Testimonial/Testimonial'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -214,6 +215,50 @@ function App() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 sm:px-8 bg-[#282c34]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
+            What Our Customers Say
+          </h2>
+          <p className="text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+            Join leading teams that have transformed their content workflow with Builder
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Testimonial
+              quote="Builder has completely transformed how our marketing team operates. We can now update landing pages in minutes without coordinating with developers. The results speak for themselves—our conversion rates have increased by 35%."
+              author="Emily Chen"
+              position="Head of Marketing"
+              company="TechFlow Solutions"
+              avatar="https://via.placeholder.com/80x80/61dafb/282c34?text=EC"
+              rating={5}
+              variant="card"
+            />
+
+            <Testimonial
+              quote="The ROI has been incredible. We went from a 2-week deployment cycle to real-time content updates. Our team is shipping 10x faster, and the intuitive editor means even non-technical team members can contribute."
+              author="Marcus Rodriguez"
+              position="VP of Product"
+              company="CloudScale Inc."
+              avatar="https://via.placeholder.com/80x80/61dafb/282c34?text=MR"
+              rating={5}
+              variant="card"
+            />
+
+            <Testimonial
+              quote="What impressed us most was how well Builder integrates with our existing tech stack. We maintained full control over our infrastructure while gaining the ability to publish content instantly. No more bottlenecks, just seamless workflows."
+              author="Sarah Patel"
+              position="Engineering Director"
+              company="DataCore Systems"
+              avatar="https://via.placeholder.com/80x80/61dafb/282c34?text=SP"
+              rating={5}
+              variant="card"
+            />
           </div>
         </div>
       </section>

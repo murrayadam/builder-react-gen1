@@ -308,3 +308,16 @@ Builder.registerComponent(ContactForm, {
 });
 
 Builder.registerComponent(Accordion, accordionConfig)
+
+Builder.register('insertMenu', {
+  name: 'Custom Components',
+  items: [
+    { name: 'Counter', item: 'Counter' },
+    { name: 'Progress Bar', item: 'Progress Bar' },
+    { name: 'Pricing Card', item: 'Pricing Card' },
+    { name: 'Image Carousel', item: 'Image Carousel' },
+    { name: 'Testimonial', item: 'Testimonial' },
+    { name: 'Contact Form', item: 'Contact Form' },
+    { name: 'Accordion', item: 'Accordion' },
+  ],
+})
