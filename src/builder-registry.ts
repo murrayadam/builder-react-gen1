@@ -5,8 +5,19 @@ import PricingCard from "./components/PricingCard/PricingCard";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ContactForm from "./components/ContactForm/ContactForm";
-import * as Accordion from "@builder.io/widgets/dist/lib/components/Accordion"
-import { accordionConfig } from '@builder.io/widgets/dist/lib/components/Accordion.config';
+
+Builder.register('insertMenu', {
+  name: 'Custom Components',
+  items: [
+    { name: 'Counter', item: 'Counter' },
+    { name: 'Progress Bar', item: 'Progress Bar' },
+    { name: 'Pricing Card', item: 'Pricing Card' },
+    { name: 'Image Carousel', item: 'Image Carousel' },
+    { name: 'Testimonial', item: 'Testimonial' },
+    { name: 'Contact Form', item: 'Contact Form' },
+    { name: 'Accordion', item: 'Accordion' },
+  ],
+})
 
 Builder.registerComponent(Counter, {
   name: "Counter",
@@ -306,18 +317,3 @@ Builder.registerComponent(ContactForm, {
     }
   ],
 });
-
-Builder.registerComponent(Accordion, accordionConfig)
-
-Builder.register('insertMenu', {
-  name: 'Custom Components',
-  items: [
-    { name: 'Counter', item: 'Counter' },
-    { name: 'Progress Bar', item: 'Progress Bar' },
-    { name: 'Pricing Card', item: 'Pricing Card' },
-    { name: 'Image Carousel', item: 'Image Carousel' },
-    { name: 'Testimonial', item: 'Testimonial' },
-    { name: 'Contact Form', item: 'Contact Form' },
-    { name: 'Accordion', item: 'Accordion' },
-  ],
-})
