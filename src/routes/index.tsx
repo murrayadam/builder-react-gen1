@@ -9,11 +9,6 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-[#282c34] to-[#1a1d23] text-white">
       {/* Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
-        <img
-          src={logo}
-          className="h-20 sm:h-28 mb-8 pointer-events-none"
-          alt="Builder.io logo"
-        />
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-center max-w-4xl">
           Build Digital Experiences Without the Developer Bottleneck
         </h1>
