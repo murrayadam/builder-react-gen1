@@ -34,6 +34,9 @@ function App() {
             Get Started with Builder
           </a>
         </div>
+        <div className="flex flex-col relative mt-5 h-auto">
+          <br />
+        </div>
       </header>
 
       {/* Three Ways to Use Publish */}
