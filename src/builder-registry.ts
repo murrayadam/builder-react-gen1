@@ -7,7 +7,7 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import ContactForm from "./components/ContactForm/ContactForm";
 
 Builder.register('insertMenu', {
-  name: 'Custom Components',
+  name: 'My Components',
   items: [
     { name: 'Counter', item: 'Counter' },
     { name: 'Progress Bar', item: 'Progress Bar' },
