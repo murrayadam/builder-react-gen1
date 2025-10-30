@@ -15,7 +15,6 @@ Builder.register('insertMenu', {
     { name: 'Image Carousel', item: 'Image Carousel' },
     { name: 'Testimonial', item: 'Testimonial' },
     { name: 'Contact Form', item: 'Contact Form' },
-    { name: 'Accordion', item: 'Accordion' },
   ],
 })
 
@@ -253,12 +252,6 @@ Builder.registerComponent(Testimonial, {
       enum: ["card", "minimal", "centered"],
       defaultValue: "card",
       helperText: "Display style"
-    },
-    {
-      name: "tagsRequired",
-      type: "Tags",
-      enum: ["tag1", "tag2", "tag3"],
-      required: true,
     },
   ],
 });
